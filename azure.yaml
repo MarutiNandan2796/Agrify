@@ -1,0 +1,20 @@
+name: agrify-soil-testing
+metadata:
+  template: agrify-soil-testing@0.0.1
+
+services:
+  backend:
+    project: ./backend
+    language: js
+    host: containerapp
+    docker:
+      path: ./backend/Dockerfile
+      context: ./backend
+
+  frontend:
+    project: ./frontend
+    language: js
+    host: containerapp
+    docker:
+      path: ./frontend/Dockerfile
+      context: ./frontend
